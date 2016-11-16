@@ -1,0 +1,10 @@
+{
+  "accountTypes": [
+    "Agent Login",
+    "Corporate Login",
+    "My Bookings",
+    "Cancel Bookings",
+    "Re-schedule Bookings",
+    "Print E-tickets"
+  ]
+}

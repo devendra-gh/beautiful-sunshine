@@ -1,0 +1,15 @@
+{
+  "supports": [
+    "My Bookings",
+    "Customer Forums",
+    "Contact Us",
+    "Make a Payment",
+    "Complete Booking",
+    "Retail Offices",
+    "Assurance Claim",
+    "Flight Cancellation Charges",
+    "Flight Rescheduling Charges",
+    "Flight Booking Status",
+    "Flight Refund Status"
+  ]
+}
