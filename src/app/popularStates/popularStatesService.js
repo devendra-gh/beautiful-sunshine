@@ -1,4 +1,4 @@
-(function (constants, service, ajax) {
+(function (constants, ajax, service) {
     'use strict';
 
     var bsConfig = constants;
@@ -27,4 +27,4 @@
             });
     }
 
-})( bsApp.constants, bsApp.popularRegionsService = bsApp.popularRegionsService || {}, bsApp.ajax);
+})( bsApp.constants, bsApp.ajax, bsApp.popularRegionsService = bsApp.popularRegionsService || {});

@@ -1,4 +1,4 @@
-(function (constants, service, ajax) {
+(function (constants, ajax, service) {
     'use strict';
 
     var bsConfig = constants;
@@ -38,4 +38,4 @@
             });
     }
 
-})( bsApp.constants, bsApp.headerService = bsApp.headerService || {}, bsApp.ajax);
+})( bsApp.constants, bsApp.ajax, bsApp.headerService = bsApp.headerService || {});

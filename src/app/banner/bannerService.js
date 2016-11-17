@@ -1,4 +1,4 @@
-(function (constants, service, ajax) {
+(function (constants, ajax, service) {
     'use strict';
 
     var bsConfig = constants;
@@ -16,4 +16,4 @@
             });
     }
 
-})(bsApp.constants, bsApp.bannerService = bsApp.bannerService || {}, bsApp.ajax);
+})(bsApp.constants, bsApp.ajax, bsApp.bannerService = bsApp.bannerService || {});

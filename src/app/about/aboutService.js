@@ -1,4 +1,4 @@
-(function (constants, service, ajax) {
+(function (constants, ajax, service) {
     'use strict';
 
     var bsConfig = constants;
@@ -18,4 +18,4 @@
     }
 
 
-})(bsApp.constants, bsApp.aboutService = bsApp.aboutService || {}, bsApp.ajax);
+})(bsApp.constants, bsApp.ajax, bsApp.aboutService = bsApp.aboutService || {});
