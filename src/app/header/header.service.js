@@ -1,13 +1,13 @@
-(function (constants, ajax, service) {
+(function (Constants, Ajax, Service) {
     'use strict';
 
-    service.getCategory = getCategory;
-    service.getCustomerSupport = getCustomerSupport;
-    service.getAccountTypes = getAccountTypes;
+    Service.getCategory = getCategory;
+    Service.getCustomerSupport = getCustomerSupport;
+    Service.getAccountTypes = getAccountTypes;
 
     //////////
     function getCategory() {
-        return ajax(constants.API_CATEGORY, 'GET')
+        return Ajax(Constants.API_CATEGORY, 'GET')
             .then(function (response) {
                 if (response.category.length) {
                     return response.category;
@@ -17,7 +17,7 @@
     }
 
     function getCustomerSupport() {
-        return ajax(constants.API_CUSTOMER_SUPPORT, 'GET')
+        return Ajax(Constants.API_CUSTOMER_SUPPORT, 'GET')
             .then(function (response) {
                 if (response.supports.length) {
                     return response.supports;
@@ -27,7 +27,7 @@
     }
 
     function getAccountTypes() {
-        return ajax(constants.API_ACCOUNT_TYPES, 'GET')
+        return Ajax(Constants.API_ACCOUNT_TYPES, 'GET')
             .then(function (response) {
                 if (response.accountTypes.length) {
                     return response.accountTypes;
@@ -36,4 +36,4 @@
             });
     }
 
-})( bsApp.constants, bsApp.ajax, bsApp.headerService = bsApp.headerService || {});
+})( bsApp.Constants, bsApp.Ajax, bsApp.HeaderService = bsApp.HeaderService || {});

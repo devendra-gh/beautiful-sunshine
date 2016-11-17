@@ -1,4 +1,4 @@
-(function (service) {
+(function (Service) {
     'use strict';
 
     init();
@@ -9,7 +9,7 @@
     }
 
     function loadAboutCountry() {
-        service.getAboutCountry()
+        Service.getAboutCountry()
             .then(function (result) {
                 createAboutCountry(result);
             }).catch(function (err) {
@@ -64,4 +64,4 @@
         aboutCountryElem.innerHTML = tempHTML;
     }
 
-})(bsApp.aboutService);
+})(bsApp.AboutService);

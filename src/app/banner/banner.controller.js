@@ -1,4 +1,4 @@
-(function (service) {
+(function (Service) {
     'use strict';
 
     init();
@@ -9,7 +9,7 @@
     }
 
     function loadBannerList(){
-        service.getBannerList()
+        Service.getBannerList()
             .then(function (result) {
                 createBannerList(result);
             }).catch(function (err) {
@@ -72,4 +72,4 @@
         }, 5000);
     }
 
-})(bsApp.bannerService);
+})(bsApp.BannerService);

@@ -5,6 +5,4 @@
     window.bsApp = {};
 
 
-
-
 })();

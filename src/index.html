@@ -842,25 +842,25 @@
 
         <div class="link-tab-nav">
             <div class="container clearfix">
-                <ul>
-                    <li><span class="title">Holidays<i class="caret-down"></i></span></li>
-                    <li><span class="title">Domestic Flight<i class="caret-down"></i></span></li>
-                    <li><span class="title">International Flight<i class="caret-down"></i></span></li>
-                    <li><span class="title">Hotels India<i class="caret-down"></i></span></li>
-                    <li><span class="title">International  Holidays<i class="caret-down"></i></span></li>
-                    <li><span class="title">Bus Booking<i class="caret-down"></i></span></li>
-                    <li><span class="title">Train Booking<i class="caret-down"></i></span></li>
+                <ul id="link-tabs">
+                    <li data-tab="tab-link-one" class="active-tab"><span class="title">Holidays<i class="caret-down"></i></span></li>
+                    <li data-tab="tab-link-two"><span class="title">Domestic Flight<i class="caret-down"></i></span></li>
+                    <li data-tab="tab-link-three"><span class="title">International Flight<i class="caret-down"></i></span></li>
+                    <li data-tab="tab-link-four"><span class="title">Hotels India<i class="caret-down"></i></span></li>
+                    <li data-tab="tab-link-five"><span class="title">International  Holidays<i class="caret-down"></i></span></li>
+                    <li data-tab="tab-link-six"><span class="title">Bus Booking<i class="caret-down"></i></span></li>
+                    <li data-tab="tab-link-seven"><span class="title">Train Booking<i class="caret-down"></i></span></li>
                 </ul>
             </div>
         </div>
 
         <div class="link-panel-container">
             <div class="container clearfix">
-                <div class="tab-panel-section">
-                    <div class="tab-panel clearfix">
+                <div class="tabber-panel clearfix">
+                    <div class="tab-panel active-panel" id="tab-link-one">
                         <p>Yatra.com brings you a wide range of holiday options in India and abroad. Select from a wide variety of standard packages or customize your holiday. Find amazing deals on individual (FIT) and group (GIT) travel to hot selling destinations of Asia (Thailand, Singapore, Maldives, Mauritius, Malaysia, Hong Kong and Macau, the Indian Subcontinent and others), the Americas (USA, Mexico, Canada), Europe (Western and Eastern Europe), and the Middle East (Dubai and other Emirates) among others.</p>
                     </div>
-                    <div class="tab-panel clearfix">
+                    <div class="tab-panel" id="tab-link-two">
                         <ul>
                             <li><a href="#">Flights</a></li>
                             <li><a href="#">Cheap Air Tickets</a></li>
@@ -874,7 +874,7 @@
                             <li><a href="#">Spicejet</a></li>
                         </ul>
                     </div>
-                    <div class="tab-panel clearfix">
+                    <div class="tab-panel" id="tab-link-three">
                         <ul>
                             <li><a href="#">International Flights</a></li>
                             <li><a href="#">Airlines</a></li>
@@ -888,7 +888,7 @@
                             <li><a href="#">Singapore Airlines</a></li>
                         </ul>
                     </div>
-                    <div class="tab-panel clearfix">
+                    <div class="tab-panel" id="tab-link-four">
                         <ul>
                             <li><a href="#">Hotel booking</a></li>
                             <li><a href="#">Hotels in Goa</a></li>
@@ -902,7 +902,7 @@
                             <li><a href="#">Hotels in Nainital</a></li>
                         </ul>
                     </div>
-                    <div class="tab-panel clearfix">
+                    <div class="tab-panel" id="tab-link-five">
                         <ul>
                             <li><a href="#">India Holiday Packages</a></li>
                             <li><a href="#">Kerala Tour Packages</a></li>
@@ -934,7 +934,7 @@
                             <li><a href="#">Uttrakhand Tourism</a></li>
                         </ul>
                     </div>
-                    <div class="tab-panel clearfix">
+                    <div class="tab-panel" id="tab-link-six">
                         <ul>
                             <li><a href="#">International Tour packages</a></li>
                             <li><a href="#">Singapore Tour Packages</a></li>
@@ -970,7 +970,7 @@
                             <li><a href="#">International Honeymoon Packages</a></li>
                         </ul>
                     </div>
-                    <div class="tab-panel clearfix">
+                    <div class="tab-panel" id="tab-link-seven">
                         <ul>
                             <li><a href="#">Bus Booking</a></li>
                             <li><a href="#">Mumbai to Goa Bus</a></li>
@@ -982,20 +982,6 @@
                             <li><a href="#">Bangalore to Goa Bus</a></li>
                             <li><a href="#">Chennai to Bangalore Bus</a></li>
                             <li><a href="#">Delhi to Jaipur Bus</a></li>
-                        </ul>
-                    </div>
-                    <div class="tab-panel clearfix">
-                        <ul>
-                            <li><a href="#">IRCTC Railways Reservation</a></li>
-                            <li><a href="#">Indian Railway Routes</a></li>
-                            <li><a href="#">Train Ticket Booking</a></li>
-                            <li><a href="#">New Delhi to Mumbai Central Trains</a></li>
-                            <li><a href="#">Train Ticket PNR Status</a></li>
-                            <li><a href="#">New Delhi to Patna Jn Trains</a></li>
-                            <li><a href="#">Indian Railways Zones</a></li>
-                            <li><a href="#">New Delhi to Lucknow Ne Trains</a></li>
-                            <li><a href="#">Indian Railway Stations</a></li>
-                            <li><a href="#">Howrah Jn to New Delhi Trains</a></li>
                         </ul>
                     </div>
                 </div>
@@ -1079,30 +1065,37 @@
         </div>
     </section>
 
+
+
+    <!-- JS Script -->
     <script type="text/javascript" src="app/app.js"></script>
 
-    <script type="text/javascript" src="app/config/constant.js"></script>
+    <script type="text/javascript" src="app/config/app.constant.js"></script>
 
-    <script type="text/javascript" src="app/lib/httpService.js"></script>
-    <script type="text/javascript" src="app/lib/scrolify.js"></script>
+    <script type="text/javascript" src="app/lib/app.http.js"></script>
+    <script type="text/javascript" src="app/lib/app.scrolify.js"></script>
+    <script type="text/javascript" src="app/lib/app.tabs.js"></script>
 
-    <script type="text/javascript" src="app/header/headerService.js"></script>
-    <script type="text/javascript" src="app/header/headerCtrl.js"></script>
+    <script type="text/javascript" src="app/header/header.service.js"></script>
+    <script type="text/javascript" src="app/header/header.controller.js"></script>
 
-    <script type="text/javascript" src="app/banner/bannerService.js"></script>
-    <script type="text/javascript" src="app/banner/bannerCtrl.js"></script>
+    <script type="text/javascript" src="app/banner/banner.service.js"></script>
+    <script type="text/javascript" src="app/banner/banner.controller.js"></script>
 
-    <script type="text/javascript" src="app/about/aboutService.js"></script>
-    <script type="text/javascript" src="app/about/aboutCtrl.js"></script>
+    <script type="text/javascript" src="app/about/about.service.js"></script>
+    <script type="text/javascript" src="app/about/about.controller.js"></script>
 
-    <script type="text/javascript" src="app/regions/regionsService.js"></script>
-    <script type="text/javascript" src="app/regions/regionsCtrl.js"></script>
+    <script type="text/javascript" src="app/regions/regions.service.js"></script>
+    <script type="text/javascript" src="app/regions/regions.controller.js"></script>
 
-    <script type="text/javascript" src="app/popularStates/popularStatesService.js"></script>
-    <script type="text/javascript" src="app/popularStates/popularStatesCtrl.js"></script>
+    <script type="text/javascript" src="app/popularStates/popular-states.service.js"></script>
+    <script type="text/javascript" src="app/popularStates/popular-states.controller.js"></script>
 
-    <script type="text/javascript" src="app/popularCities/popularCitiesService.js"></script>
-    <script type="text/javascript" src="app/popularCities/popularCitiesCtrl.js"></script>
+    <script type="text/javascript" src="app/popularCities/popular-cities.service.js"></script>
+    <script type="text/javascript" src="app/popularCities/popular-cities.controller.js"></script>
+
+    <script type="text/javascript" src="app/footer/footer.service.js"></script>
+    <script type="text/javascript" src="app/footer/footer.controller.js"></script>
 
 
 </body>

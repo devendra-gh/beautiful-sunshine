@@ -1,4 +1,4 @@
-(function (service) {
+(function (Service) {
     'use strict';
 
     init();
@@ -9,7 +9,7 @@
     }
 
     function loadPopularCities() {
-        service.getPopularCities()
+        Service.getPopularCities()
             .then(function (result) {
                 createPopularCities(result);
             }).catch(function (err) {
@@ -36,4 +36,4 @@
         popularCitiesElem.innerHTML = tempHTML;
     }
 
-})(bsApp.popularCitiesService);
+})(bsApp.PopularCitiesService);

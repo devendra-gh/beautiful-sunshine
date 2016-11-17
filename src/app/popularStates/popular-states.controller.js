@@ -1,4 +1,4 @@
-(function (service) {
+(function (Service) {
     'use strict';
 
     var popularRegionsElem = document.getElementById('popular-regions'),
@@ -37,7 +37,7 @@
     });
 
     function loadPopularRegions() {
-        service.getPopularRegions()
+        Service.getPopularRegions()
             .then(function (result) {
                 createPopularRegions(result);
             }).catch(function (err) {
@@ -56,7 +56,7 @@
     }
 
     function loadPopularStates(){
-        service.getPopularStates()
+        Service.getPopularStates()
             .then(function (result) {
                 createPopularStates(result);
                 slidePopularStatesItem();
@@ -110,4 +110,4 @@
     }
 
 
-})(bsApp.popularRegionsService);
+})(bsApp.PopularRegionsService);

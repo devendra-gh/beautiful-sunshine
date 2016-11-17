@@ -1,7 +1,7 @@
 (function (bsApp) {
     'use strict';
 
-    bsApp.constants = {
+    bsApp.Constants = {
         API_CATEGORY : 'api/category.json',
         API_CUSTOMER_SUPPORT : 'api/customer-support.json',
         API_ACCOUNT_TYPES : 'api/account-types.json',
@@ -13,6 +13,6 @@
         API_POPULAR_CITIES : 'api/popular-cities.json'
     };
 
-    Object.freeze(bsApp.constants);
+    Object.freeze(bsApp.Constants);
 
 })(bsApp);

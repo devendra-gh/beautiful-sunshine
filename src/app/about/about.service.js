@@ -1,11 +1,11 @@
-(function (constants, ajax, service) {
+(function (Constants, Ajax, Service) {
     'use strict';
 
-    service.getAboutCountry = getAboutCountry;
+    Service.getAboutCountry = getAboutCountry;
 
     //////////
     function getAboutCountry() {
-        return ajax(constants.API_ABOUT_COUNTRY, 'GET')
+        return Ajax(Constants.API_ABOUT_COUNTRY, 'GET')
             .then(function (response) {
                 if (Object.keys(response.aboutCountries).length) {
                     return response.aboutCountries;
@@ -15,4 +15,4 @@
     }
 
 
-})(bsApp.constants, bsApp.ajax, bsApp.aboutService = bsApp.aboutService || {});
+})(bsApp.Constants, bsApp.Ajax, bsApp.AboutService = bsApp.AboutService || {});

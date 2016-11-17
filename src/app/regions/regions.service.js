@@ -1,11 +1,11 @@
-(function (constants, ajax, service) {
+(function (Constants, Ajax, Service) {
     'use strict';
 
-    service.getRegions = getRegions;
+    Service.getRegions = getRegions;
 
     //////////
     function getRegions() {
-        return ajax(constants.API_REGIONS, 'GET')
+        return Ajax(Constants.API_REGIONS, 'GET')
             .then(function (response) {
                 if (Object.keys(response.regions).length) {
                     return response.regions;
@@ -15,4 +15,4 @@
     }
 
 
-})(bsApp.constants, bsApp.ajax, bsApp.regionsService = bsApp.regionsService || {});
+})(bsApp.Constants, bsApp.Ajax, bsApp.RegionsService = bsApp.RegionsService || {});

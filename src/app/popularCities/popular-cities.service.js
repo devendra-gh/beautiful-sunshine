@@ -1,11 +1,11 @@
-(function (constants, ajax, service) {
+(function (Constants, Ajax, Service) {
     'use strict';
 
-    service.getPopularCities = getPopularCities;
+    Service.getPopularCities = getPopularCities;
 
     //////////
     function getPopularCities() {
-        return ajax(constants.API_POPULAR_CITIES, 'GET')
+        return Ajax(Constants.API_POPULAR_CITIES, 'GET')
             .then(function (response) {
                 if (response.popularCities.length) {
                     return response.popularCities;
@@ -14,4 +14,4 @@
             });
     }
 
-})( bsApp.constants, bsApp.ajax, bsApp.popularCitiesService = bsApp.popularCitiesService || {});
+})( bsApp.Constants, bsApp.Ajax, bsApp.PopularCitiesService = bsApp.PopularCitiesService || {});

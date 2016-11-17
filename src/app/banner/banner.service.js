@@ -1,11 +1,11 @@
-(function (constants, ajax, service) {
+(function (Constants, Ajax, Service) {
     'use strict';
 
-    service.getBannerList = getBannerList;
+    Service.getBannerList = getBannerList;
 
     //////////
     function getBannerList() {
-        return ajax(constants.API_BANNER, 'GET')
+        return Ajax(Constants.API_BANNER, 'GET')
             .then(function (response) {
                 if (response.banner.length) {
                     return response.banner;
@@ -14,4 +14,4 @@
             });
     }
 
-})(bsApp.constants, bsApp.ajax, bsApp.bannerService = bsApp.bannerService || {});
+})(bsApp.Constants, bsApp.Ajax, bsApp.BannerService = bsApp.BannerService || {});

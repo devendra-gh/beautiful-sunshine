@@ -384,7 +384,9 @@ h2 {
 }
 
 .filter-images.state-slider {
+    margin: -5px;
     height: 270px;
+    position: relative;
     overflow: hidden;
 }
 
@@ -592,25 +594,34 @@ h2 {
     cursor: pointer;
 }
 
+.link-tab-nav li.active-tab .caret-down {
+    border-top: 0;
+    border-bottom: 5px solid #333;
+}
+
 .link-tab-nav li span {
     display: block;
 }
 
-.tab-panel-section {
+.tabber-panel {
     padding: 30px 0;
     font-size: 12px;
 }
 
-.tab-panel + .tab-panel {
+.tab-panel {
     display: none;
 }
 
-.tab-panel-section .tab-panel li {
+.active-panel {
+    display: block;
+}
+
+.tabber-panel .tab-panel li {
     float: left;
     width: 20%;
 }
 
-.tab-panel-section .tab-panel li a {
+.tabber-panel .tab-panel li a {
     padding: 5px 0;
     display: inline-block;
 }

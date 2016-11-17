@@ -1,4 +1,4 @@
-(function (service) {
+(function (Service) {
     'use strict';
 
     init();
@@ -11,7 +11,7 @@
     }
 
     function loadCategory() {
-        service.getCategory()
+        Service.getCategory()
             .then(function (result) {
                 createCategory(result);
             }).catch(function (err) {
@@ -31,7 +31,7 @@
     }
 
     function loadCustomerSupport() {
-        service.getCustomerSupport()
+        Service.getCustomerSupport()
             .then(function (result) {
                 createCustomerSupport(result);
             }).catch(function (err) {
@@ -51,7 +51,7 @@
     }
 
     function loadAccountTypes(){
-        service.getAccountTypes()
+        Service.getAccountTypes()
             .then(function (result) {
                 createAccountTypes(result);
             }).catch(function (err) {
@@ -70,4 +70,4 @@
         accountTypeElem.innerHTML = tempHTML;
     }
 
-})(bsApp.headerService);
+})(bsApp.HeaderService);

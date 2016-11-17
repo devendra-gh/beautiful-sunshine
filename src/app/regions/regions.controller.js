@@ -1,4 +1,4 @@
-(function (service) {
+(function (Service) {
     'use strict';
 
     init();
@@ -9,7 +9,7 @@
     }
 
     function loadRegions() {
-        service.getRegions()
+        Service.getRegions()
             .then(function (result) {
                 createRegions(result);
             }).catch(function (err) {
@@ -33,4 +33,4 @@
         regionsElem.innerHTML = tempHTML;
     }
 
-})(bsApp.regionsService);
+})(bsApp.RegionsService);

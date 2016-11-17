@@ -1,12 +1,12 @@
-(function (constants, ajax, service) {
+(function (Constants, Ajax, Service) {
     'use strict';
 
-    service.getPopularRegions = getPopularRegions;
-    service.getPopularStates = getPopularStates;
+    Service.getPopularRegions = getPopularRegions;
+    Service.getPopularStates = getPopularStates;
 
     //////////
     function getPopularRegions() {
-        return ajax(constants.API_POPULAR_REGIONS, 'GET')
+        return Ajax(Constants.API_POPULAR_REGIONS, 'GET')
             .then(function (response) {
                 if (response.popularRegions.length) {
                     return response.popularRegions;
@@ -16,7 +16,7 @@
     }
 
     function getPopularStates() {
-        return ajax(constants.API_POPULAR_STATES, 'GET')
+        return Ajax(Constants.API_POPULAR_STATES, 'GET')
             .then(function (response) {
                 if (response.regions.length) {
                     return response.regions;
@@ -25,4 +25,4 @@
             });
     }
 
-})( bsApp.constants, bsApp.ajax, bsApp.popularRegionsService = bsApp.popularRegionsService || {});
+})( bsApp.Constants, bsApp.Ajax, bsApp.PopularRegionsService = bsApp.PopularRegionsService || {});

@@ -1,7 +1,7 @@
 (function (bsApp) {
     'use strict';
 
-    bsApp.ajax = ajax;
+    bsApp.Ajax = ajax;
 
     //calling function
     function ajax(url, method, data) {
