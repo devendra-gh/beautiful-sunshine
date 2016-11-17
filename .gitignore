@@ -1,10 +1,1 @@
-node_modules
-dist
-build
-.tmp
-bower_components
 .idea
-app/thirdPartyLib/collatedFiles
-app/scripts/scripts.js
-app/scripts/scripts.js.map
-app/styles/collatedStyles.min.css

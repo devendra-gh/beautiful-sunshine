@@ -1,17 +1,23 @@
-(function (ajax) {
+(function (service) {
     'use strict';
 
-    //ajax call for get category
-    ajax('api/banner.json', 'GET')
-        .then(function (result) {
-            createCategory(result);
-        }).catch(function (err) {
-            console.error(err.statusText);
-        });
+    init();
 
-    //function definition
-    function createCategory(response) {
-        var bannerData = response.banner,
+    //////////
+    function init() {
+        loadBannerList();
+    }
+
+    function loadBannerList(){
+        service.getBannerList()
+            .then(function (result) {
+                createBannerList(result);
+            }).catch(function (err) {
+                console.error(err.statusText);
+            });
+    }
+    function createBannerList(response) {
+        var bannerData = response,
             bannerElem = document.getElementById('banner-slider'),
             tempHTML = '';
 
@@ -44,7 +50,6 @@
         bannerElem.innerHTML = tempHTML;
         sliderToRun(bannerElem);
     }
-
     function sliderToRun(bannerElem) {
         var bannerItem = bannerElem.childNodes,
             bannerItemLength = bannerElem.childNodes.length,
@@ -60,10 +65,11 @@
                     item.style.transform = translateBase;
                 });
             } else {
+                bannerItem[counter].style.transform = translateBase;
                 counter++;
             }
             bannerItem[counter].style.transform = translateDefault;
         }, 5000);
     }
 
-})(bsApp.util.ajax);
+})(bsApp.bannerService);

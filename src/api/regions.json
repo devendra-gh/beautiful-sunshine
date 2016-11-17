@@ -1,0 +1,30 @@
+{
+  "regions": {
+    "91": [
+      {
+        "caption": "NORTH INDIA",
+        "imageUrl": "img4x3.jpg"
+      },
+      {
+        "caption": "SOUTH INDIA",
+        "imageUrl": "img4x3.jpg"
+      },
+      {
+        "caption": "WEST INDIA",
+        "imageUrl": "img4x3.jpg"
+      },
+      {
+        "caption": "EAST INDIA",
+        "imageUrl": "img4x3.jpg"
+      },
+      {
+        "caption": "NORTH EAST INDIA",
+        "imageUrl": "img4x3.jpg"
+      },
+      {
+        "caption": "CENTRAL INDIA",
+        "imageUrl": "img4x3.jpg"
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "popularRegions": [
+    {
+      "name": "north_india",
+      "region": "NORTH INDIA"
+    },
+    {
+      "name": "south_india",
+      "region": "SOUTH INDIA"
+    },
+    {
+      "name": "west_india",
+      "region": "WEST INDIA"
+    },
+    {
+      "name": "east_india",
+      "region": "EAST INDIA"
+    },
+    {
+      "name": "north_east_india",
+      "region": "NORTH EAST INDIA"
+    },
+    {
+      "name": "central_india",
+      "region": "CENTRAL INDIA"
+    }
+  ]
+}

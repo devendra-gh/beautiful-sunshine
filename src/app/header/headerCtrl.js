@@ -1,34 +1,25 @@
-(function (ajax) {
+(function (service) {
     'use strict';
 
-    //ajax call for get category
-    ajax('api/category.json', 'GET')
-        .then(function (result) {
-            createCategory(result);
-        }).catch(function (err) {
-            console.error(err.statusText);
-        });
+    init();
 
-    //ajax call for get customer support
-    ajax('api/customer-support.json', 'GET')
-        .then(function (result) {
-            createCustomerSupport(result);
-        }).catch(function (err) {
-            console.error(err.statusText);
-        });
+    //////////
+    function init() {
+        loadCategory();
+        loadCustomerSupport();
+        loadAccountTypes();
+    }
 
-    //ajax call for get account type
-    ajax('api/account-types.json', 'GET')
-        .then(function (result) {
-            createAccountTypes(result);
-        }).catch(function (err) {
-            console.error(err.statusText);
-        });
-
-
-    //function definition
+    function loadCategory() {
+        service.getCategory()
+            .then(function (result) {
+                createCategory(result);
+            }).catch(function (err) {
+                console.error(err.statusText);
+            });
+    }
     function createCategory(response) {
-        var categoryData = response.category,
+        var categoryData = response,
             categoryElem = document.getElementById('category'),
             tempHTML = '';
 
@@ -39,8 +30,16 @@
         categoryElem.innerHTML = tempHTML;
     }
 
+    function loadCustomerSupport() {
+        service.getCustomerSupport()
+            .then(function (result) {
+                createCustomerSupport(result);
+            }).catch(function (err) {
+                console.error(err.statusText);
+            });
+    }
     function createCustomerSupport(response) {
-        var supportData = response.supports,
+        var supportData = response,
             supportElem = document.getElementById('customer-support'),
             tempHTML = '';
 
@@ -51,8 +50,16 @@
         supportElem.innerHTML = tempHTML;
     }
 
+    function loadAccountTypes(){
+        service.getAccountTypes()
+            .then(function (result) {
+                createAccountTypes(result);
+            }).catch(function (err) {
+                console.error(err.statusText);
+            });
+    }
     function createAccountTypes(response) {
-        var accountTypes = response.accountTypes,
+        var accountTypes = response,
             accountTypeElem = document.getElementById('account-types'),
             tempHTML = '';
 
@@ -63,4 +70,4 @@
         accountTypeElem.innerHTML = tempHTML;
     }
 
-})(bsApp.util.ajax);
+})(bsApp.headerService);

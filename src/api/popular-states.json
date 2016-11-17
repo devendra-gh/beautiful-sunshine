@@ -1,0 +1,128 @@
+{
+  "regions": [
+    {
+      "name": "north_india",
+      "region": "NORTH INDIA",
+      "states": [
+        {
+          "name": "Haryana",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Himachal Pradesh",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Jammu and Kashmir",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Punjab",
+          "imageUrl": "img4x3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "south_india",
+      "region": "SOUTH INDIA",
+      "states": [
+        {
+          "name": "Andhra Pradesh",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Telangana",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Karnataka",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Kerala",
+          "imageUrl": "img4x3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "west_india",
+      "region": "WEST INDIA",
+      "states": [
+        {
+          "name": "Gujrat",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Maharashtra",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Dadra and Nager Haveli",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Daman and Diu",
+          "imageUrl": "img4x3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "east_india",
+      "region": "EAST INDIA",
+      "states": [
+        {
+          "name": "Bihar",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Jharkhand",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Orissa",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "West Bengal",
+          "imageUrl": "img4x3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "north_east_india",
+      "region": "NORTH EAST INDIA",
+      "states": [
+        {
+          "name": "Arunanchal Pradesh",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Assam",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Manipur",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Meghalaya",
+          "imageUrl": "img4x3.jpg"
+        }
+      ]
+    },
+    {
+      "name": "central_india",
+      "region": "CENTRAL INDIA",
+      "states": [
+        {
+          "name": "Chhattisgarh",
+          "imageUrl": "img4x3.jpg"
+        },
+        {
+          "name": "Madhya Pradesh",
+          "imageUrl": "img4x3.jpg"
+        }
+      ]
+    }
+  ]
+}

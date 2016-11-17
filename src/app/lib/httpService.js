@@ -1,9 +1,7 @@
 (function (bsApp) {
     'use strict';
 
-    bsApp.util = {
-        ajax: ajax
-    };
+    bsApp.ajax = ajax;
 
     //calling function
     function ajax(url, method, data) {
