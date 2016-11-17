@@ -1,15 +1,13 @@
 (function (constants, ajax, service) {
     'use strict';
 
-    var bsConfig = constants;
-
     service.getCategory = getCategory;
     service.getCustomerSupport = getCustomerSupport;
     service.getAccountTypes = getAccountTypes;
 
     //////////
     function getCategory() {
-        return ajax(bsConfig.API_CATEGORY, 'GET')
+        return ajax(constants.API_CATEGORY, 'GET')
             .then(function (response) {
                 if (response.category.length) {
                     return response.category;
@@ -19,7 +17,7 @@
     }
 
     function getCustomerSupport() {
-        return ajax(bsConfig.API_CUSTOMER_SUPPORT, 'GET')
+        return ajax(constants.API_CUSTOMER_SUPPORT, 'GET')
             .then(function (response) {
                 if (response.supports.length) {
                     return response.supports;
@@ -29,7 +27,7 @@
     }
 
     function getAccountTypes() {
-        return ajax(bsConfig.API_ACCOUNT_TYPES, 'GET')
+        return ajax(constants.API_ACCOUNT_TYPES, 'GET')
             .then(function (response) {
                 if (response.accountTypes.length) {
                     return response.accountTypes;

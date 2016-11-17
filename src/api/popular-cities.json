@@ -1,0 +1,28 @@
+{
+  "popularCities": [
+    {
+      "name": "Goa",
+      "genre": "BEACH",
+      "imageUrl": "img4x3.jpg",
+      "about": "Goa is a favoured tourist destination of people from around the world. With its vast stret"
+    },
+    {
+      "name": "Manali",
+      "genre": "ADVENTURE",
+      "imageUrl": "img4x3.jpg",
+      "about": "Referred to as the Queen of Himachal Pradesh, Manali is an ancient town that is located at"
+    },
+    {
+      "name": "Shimla",
+      "genre": "HILL STATION",
+      "imageUrl": "img4x3.jpg",
+      "about": "A wonderful abode in the Himalayas, the city of Shimla is surrounded by scenic pine-covere"
+    },
+    {
+      "name": "Andaman Island",
+      "genre": "BEACH",
+      "imageUrl": "img4x3.jpg",
+      "about": "Against a backdrop of the cerulean waters of the Bay of Bengal, Andaman Islands sparkle li"
+    }
+  ]
+}

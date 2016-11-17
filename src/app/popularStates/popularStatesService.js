@@ -1,14 +1,12 @@
 (function (constants, ajax, service) {
     'use strict';
 
-    var bsConfig = constants;
-
     service.getPopularRegions = getPopularRegions;
     service.getPopularStates = getPopularStates;
 
     //////////
     function getPopularRegions() {
-        return ajax(bsConfig.API_POPULAR_REGIONS, 'GET')
+        return ajax(constants.API_POPULAR_REGIONS, 'GET')
             .then(function (response) {
                 if (response.popularRegions.length) {
                     return response.popularRegions;
@@ -18,7 +16,7 @@
     }
 
     function getPopularStates() {
-        return ajax(bsConfig.API_POPULAR_STATES, 'GET')
+        return ajax(constants.API_POPULAR_STATES, 'GET')
             .then(function (response) {
                 if (response.regions.length) {
                     return response.regions;

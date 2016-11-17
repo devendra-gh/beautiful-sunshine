@@ -1,13 +1,11 @@
 (function (constants, ajax, service) {
     'use strict';
 
-    var bsConfig = constants;
-
     service.getBannerList = getBannerList;
 
     //////////
     function getBannerList() {
-        return ajax(bsConfig.API_BANNER, 'GET')
+        return ajax(constants.API_BANNER, 'GET')
             .then(function (response) {
                 if (response.banner.length) {
                     return response.banner;
